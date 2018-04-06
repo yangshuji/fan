@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+<link rel="stylesheet" href="css/login.css" />
+<script type="text/javascript" src="js/cookie.js"></script>
+
+</head>
+<body>
+	<!--页面最顶端内容-->
+	<div class="top_bar">
+		<ul>
+			<li><a href="#">网站首页</a></li>
+			<li><a href="#">帮助中心</a></li>
+			<li><a href="#">网站公告</a></li>
+		</ul>
+	</div>
+	<!--众贤服务logo部分-->
+	<div class="logo_fu"><a href="#"><img src="img/images_details/201708091140381013345.jpg"></a>	
+	</div>
+	<!--主要内容区-->
+	<div id="content">
+		<h2>用户登录</h2>
+		<div class="fix">
+				<div class="loginForm">
+					<li class="liLab">
+						<a class="user"></a>
+						<input type="text" placeholder="手机号码/邮箱/用户名" id="input1"/>
+						<p class="focusTex focusTex1">请输入账号</p>
+					</li>
+					<li class="liLab liLab2">
+						<a class="user userpass"></a>
+						<input type="text" placeholder="密码" id="input2"/>
+						<p class="focusTex focusTex2">请输入密码</p>
+					</li>
+					
+					<li class="liLab liLab4">
+						<a href="">忘记登录</a>
+					</li>
+					<li class="liLab5">
+						<input type="button" value="登录" id="input3"/>
+						
+					</li>
+					<div class="qita">
+						<h4>使用其他账号登录</h4>
+						<a href="" class="qq"><img src="img/images_details/qq_03.jpg"></a>
+						<a href="" class="weixin"><img src = "img/images_details/weixin.jpg"></a>
+
+					</div>
+				</div>
+		
+			<div class="right">
+				<h4>没有账号？马上注册</h4>
+				<p class="p_neirong">现在免费注册成为地方门户网站用户，便能立刻享受丰富强大的会员功能和各种网站服务。</p>
+				<a href="register.html" class="regMenu">免费注册</a>
+				<div class="question">您有什么问题？可以联系我们</div>
+				<ul class="tel_lianxi">
+					<li>客服热线：400-0310-707</li>
+					<li>客服QQ1：94044390</li>
+					<li>客服QQ2：8188780</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		
+		var oInput = document.getElementsByTagName("input");
+			var focusTex1 = document.querySelector(".focusTex1");
+			var focusTex2 = document.querySelector(".focusTex2");
+			oInput[0].onblur = function(){
+				var re1 = /^(13|14|15|17|18)\d{9}$/g;//手机号
+				var re2 = /^([\w]+)@(126|163|qq)\.(com|cn)$/g;//邮箱
+				var re3 = /^[A-Za-z0-9]{6,12}$/g; //6~12位，必须是字母与数字组成。
+				if((re1 || re2 || re3).test(input1).value == false || input1.value == ""){
+					focusTex1.style.display = "block";
+				}
+			}
+			oInput[1].onblur = function(){
+				var re = /^([0-9])([\w\.\+\*\$\/\\]{5})$/g; 
+				if(re.test().value == false || input2.value == ""){
+					focusTex2.style.display = "block";
+				}
+			}
+			oInput[2].onclick = function(){
+				for(var i=0;i<oInput[i].length-2;i++){
+					  if(oInput[i].value == ""){
+	 			alert("请将信息补充完整")
+	 			return ;
+	 		   		 }
+				}
+				var json = {
+					"user":oInput[0].value,
+					"pwd":oInput[1].value
+				}
+				if(getCookie(json.user) ==oInput[1].value){
+					alert("登录成功");
+					setCookie("name",json.user,7);
+					location.href = "index.html"
+				}else{
+					alert("登录失败，请先注册！");
+					location.href = "register.htmll"
+				}
+			}
+	</script>
+	
+	
+		<!--公共的footer底部区域-->
+<div id="footer">
+	<div class="footer_top clearfix">
+		<div class="foot_box">
+			<div class="foot_Left">
+				<h2>客服电话</h2>
+				<span>400-0310-707</span>
+				<p>工作时间 周一至周六 8:00-17:30</p>
+				<b>客服QQ <a href="#"><img src="img/images_index/button_11.gif"></a></b>
+			</div>
+			<div class="foot_Center">
+				<dl>
+					<dt>购物</dt>
+					<dd><a href="#">省啦商城</a></dd>
+					<dd><a href="#">同城快店</a></dd>
+					<dd><a href="#">商家入驻</a></dd>
+					<dd><a href="#">商家管理</a></dd>
+				</dl>
+				<dl>
+					<dt>供求</dt>
+					<dd><a href="#">跳蚤市场</a></dd>
+					<dd><a href="#">交友征婚</a></dd>
+					<dd><a href="#">商业服务</a></dd>
+					<dd><a href="#">同城活动</a></dd>
+				</dl>
+				<dl>
+					<dt>房产</dt>
+					<dd><a href="#">新楼盘</a></dd>
+					<dd><a href="#">二手房</a></dd>
+					<dd><a href="#">出租房</a></dd>
+					<dd><a href="#">找中介</a></dd>
+				</dl>
+				<dl>
+					<dt>招聘</dt>
+					<dd><a href="#">找工作</a></dd>
+					<dd><a href="#">找人才</a></dd>
+					<dd><a href="#">发招聘</a></dd>
+					<dd><a href="#">填简历</a></dd>
+				</dl>
+
+			</div>
+			<div class="foot_Right">
+				<div class="foot_Right1">
+					<p>微信公众号</p>
+					<a href="#"><img src="img/images_index/201708170929175034656.jpg"></a>
+					
+				</div>
+				<div class="foot_Right2">
+					<p>APP客户端</p>
+					<a href="#"><img src="img/images_index/201709191154289028633.gif"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--加为收藏-->
+	<div class="collect">
+		<p class="collect_1"><a href="#">加为收藏</a></p>
+		<p class="collect_2">{$Mh163k_底部导航}</p>
+		<p class="collect_3"><a href="#">留言反馈</a></p>
+	</div>
+	
+	<div class="footer_bot">
+		<p class="p_Copyright">
+			Copyright @ 2015-2017  All Right Reserved @河北云佐网络科技有限公司   冀ICP备17027110号
+		</p>
+	</div>
+	
+	
+	
+	
+</body>
+</html>

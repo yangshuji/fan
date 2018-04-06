@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>聚惠买商城详情页</title>
+<link rel="stylesheet" href="css/detail.css" />
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/common.js">
+</script>
+<script type="text/javascript" src="js/cookie.js"></script>
+<script type="text/javascript" src="js/detail.js"></script>
+
+</head>
+<body>
+		<!--common布局-->
+<div class="public_top_layout">
+				<!--设置内容边界-->
+	<div class="topBar">
+					<!--用户入口-->
+		<div class="user-entry">
+<!--<img src="img/images_index/fcNav_returnHome.png">-->
+			<a href="#" class="display1">手机版</a>
+			<a href="#" class="display2">客户端</a>
+			<a href="#" class="display1">收藏本站</a>
+					</div>
+					<!--登陆信息-->
+					<div id="login_info" class="quick-menu">
+						<li id="li_hao">
+							你好
+							<a href="login.html" class="denglu">请登录</a>
+							
+						</li>
+						<li>
+							<a href="register.html" class="zhuce">免费注册</a>
+							
+						<li>
+							<a href="#">QQ登录</a>
+						</li>
+						<li>
+							<a href="#">微信登录</a>
+						</li>
+						<li>
+							<a href="#">积分商城</a>
+						</li>
+						<li class="long1">
+							
+								<a href="#">我的中心</a>
+								<ul>
+									<li><a href="#">基本资料</a></li>
+									<li><a href="#">我的收藏</a></li>
+									<li><a href="#">我的订单</a></li>
+									<li><a href="#">我的密码</a></li>
+								</ul>
+						</li>
+						<li class="long2">
+							
+								<a href="#">工作平台</a>
+							<ul>
+								<li><a href="#">商家平台</a></li>
+								<li><a href="#">企业平台</a></li>
+								<li><a href="#">中介平台</a></li>
+								<li><a href="#">商家平台</a></li>
+								<li><a href="#">会员中心</a></li>
+							</ul>
+						</li>
+						<li class="long3">
+								<a href="#">快速发布</a>
+								<ul>
+									<li><a href="#">求职简历</a></li>
+									<li><a href="#">招聘信息</a></li>
+									<li><a href="#">新闻投稿</a></li>
+									<li><a href="#">求职简历</a></li>
+								</ul>	
+					
+							
+							
+						</li>
+						<li class="long4">
+							
+								<a href="#">网站导航</a>
+						
+						</li>
+					</div>
+					
+				</div>
+			</div>	
+		<div class="clearfix w-1200">
+					<div class="logo_fl">
+						<img src="img/images_details/201708091140381013345.jpg">
+					</div>
+					<div class="search_fl">
+						<p class="search_xin">
+							生活信息
+							<ul>
+								<li>店铺商家</li>
+								<li>新闻资讯</li>
+								<li>省啦项目</li>
+								<li>招聘信息</li>
+								<li>商品信息</li>
+								<li>视频逛街</li>
+								<li>便民黄页</li>
+								<li>贴吧搜索</li>
+							</ul>
+						</p>
+						<form action="" method="post">
+							
+							<input type="text" placeholder="请输入关键字"/>
+							
+						</form>
+						<input type="button" value="搜索"/ class="search_sub">
+					</div>
+					<div class="publish_fl">
+						<a href="#" class="a_publish">免费发布消息</a>
+					</div>
+					
+				</div>
+						<!--导航区域-->
+				<div class="nav_area clearfix">
+					
+						<ul class="ul_daohang">
+							<li id="ensconce">
+								<!--ensconce：隐藏的意思-->
+								<a href="#">全部分类</a>
+								<ul class="ul_yincang">
+									<li class="li_conceal1">
+										<h2 class="h2-1">美食</h2>
+										<span>自助餐</span>
+										<span>火锅</span>
+										<span>烤肉</span>
+										<span>自助餐</span>
+										<ol class="ol_yin1">
+											<h3 class="h3_1">美食</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">自助餐</a></li>
+												<li class="li_funi"><a href="#">火锅</a></li>
+												<li class="li_funi"><a href="#">烤肉</a></li>
+												<li class="li_funi"><a href="#">烧烤</a></li>
+												<li class="li_funi"><a href="#">麻辣烫</a></li>
+												<li class="li_funi"><a href="#">西餐</a></li>
+												<li class="li_funi"><a href="#">料理</a></li>
+												<li class="li_funi"><a href="#">蛋糕</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal2">
+										<h2 class="h2-2">娱乐</h2>
+										<span>KTV</span>
+										<span>养生休闲</span>
+										<span>温泉洗浴</span>
+									
+										<ol class="ol_yin2">
+											<h3 class="h3_1">娱乐</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal3">
+										<h2 class="h2-3">酒店</h2>
+										<span>经济型酒店</span>
+										<span>豪华酒店</span>
+									
+										<ol class="ol_yin3">
+											<h3 class="h3_1">酒店</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal4">
+										<h2 class="h2-4">生活</h2>
+										<span>婚纱摄影</span>
+										<span>儿童摄影</span>
+										<span>个性写真</span>
+									
+										<ol class="ol_yin4">
+											<h3 class="h3_1">生活</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal5">
+										<h2 class="h2-5">旅游</h2>
+										<span>周边游</span>
+										<span>省内游</span>
+										<span>省外游</span>
+									
+										<ol class="ol_yin5">
+											<h3 class="h3_1">旅游</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+										<li class="li_conceal6">
+										<h2 class="h2-6">超市</h2>
+										<span>食品饮料</span>
+										<span>粮油副食</span>
+										<span>个人护理</span>
+									
+										<ol class="ol_yin6">
+											<h3 class="h3_1">超市</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal7">
+										<h2 class="h2-7">特产</h2>
+										<span>本土特产</span>
+										<span>新疆特产</span>
+										<span>云南特产</span>
+									
+										<ol class="ol_yin7">
+											<h3 class="h3_1">超市</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+
+									
+								</ul>
+										
+							</li>
+							 <li><a href="#">省啦首页</a></li>
+							 							 
+							 <li><a href="#">美食</a></li>
+							 <li><a href="#">娱乐</a></li>
+							 <li><a href="#">酒店</a></li>
+							 <li><a href="#">生活</a></li>
+							 <li><a href="#">旅游</a></li>
+							 <li><a href="#">省啦首页</a></li>
+							 <li><a href="#">专题</a></li>
+							 <li class="returnHome"><a href="#">返回门户首页</a></li>
+							 
+						</ul>
+					
+					
+				</div>
+	
+	
+	<!--杨记食府美食套餐 （小标题）-->
+			<div class="site_crumb">
+				<span>当前位置：</span>
+				<a href="#">首页></a>
+				<a href="#">省啦聚惠买商城></a>
+				<a href="#">杨记食府美食套餐</a>
+				
+			</div>
+			
+			
+		<!--购物放大效果-->	
+		<div id="result">
+			<!--top大图和bottom小图一起部分-->
+			<div class="left">
+				<!--上面大图部分-->
+				<div class="big">
+					<img src="img/images_details/15.png" class="big_img show_big_img">
+					<img src="img/images_details/18.png" class="big_img hide_big_img" />
+					<img src="img/images_details/21.png" class="big_img hide_big_img">
+					<img src="img/images_details/24.png" class="big_img hide_big_img">
+					<img src="img/images_details/27.png" class="big_img hide_big_img">
+
+					<!--左边大图内的小镜子-->
+					<div id="big_mirror"></div>
+					<!--右边显示区域的内容，可以成为宽高各为400的大镜子-->
+					<div class="mirror">
+						<!--<img src="img/images_details/15.png" class="mirror_img">-->
+					</div>
+					
+				</div>
+				<div class="small">
+					<!--<span class="left_arrow"></span>-->
+					<img src="img/images_details/14.png" index="0"/>
+					<img src="img/images_details/17.png" index="1"/>
+					<img src="img/images_details/20.png" index="2"/>
+					<img src="img/images_details/23.png" index="3"/>
+					<img src="img/images_details/26.png" index="4"/>
+					<!--<span class="right_arrow"></span>-->
+				</div>
+
+			</div>
+			<div class="main_area">
+				<div class="main_area_inherit">
+					<h1 goodsID = "001">杨记食府美食套餐</h1>
+					<div class="status">
+						<span id="time_zhan">
+							已经结束，下次赶早哦！
+						</span>
+					</div>
+					<ul class="can_price" clearfix>
+						<li class="can_price_list1">
+							<span class="tt">省钱啦</span>
+							<em class="mallPrice">￥58</em>
+						</li>
+						<li class="can_price_list2">
+							<span class="tt">市场价</span>
+							<em class="mallPrice">￥58</em>
+						</li>
+						<li class="can_price_list3">
+							<span class="tt">帮您省</span>
+							<em class="mallPrice">￥58</em>
+						</li>
+						<li class="mobleread">
+							手机下单
+							<img src="img/images_details/image.jpg">
+						</li>
+
+					</ul>
+					<ul class="table" clearfix>
+						<li class="table1">已售出0</li>
+						<li class="table2">累计评价0</li>
+						<li class="table3">送5金币</li>
+					</ul>
+					<div class="qing_buy">
+						<div class="sel_select_data">
+							<span class="a">选择套餐</span>
+							<span class="b">
+								<a href="#" class="item_btn">烤鱼套餐</a>
+								<a href="#" class="item_btn">羊蝎子套餐</a>
+							</span>
+						</div>
+						<div class="shuliang_jia">
+							<p class="p_xuanze">选择数量：</span>
+							<span class="p_shangpin">
+								<div class="mai_num" >
+									<strong><a href="#" class="reduce">-</a></strong>
+									<input class="mai_num_rong" value="1" type="text"/>
+									<strong><a href="#" class="increase">+</a></strong>
+									
+								</div>
+							</span>
+						</div>
+						<div class="goumai">
+							<a href="#" class="limai">立即购买</a>
+							<a href="#" class="addcar">添加购物车</a>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="sales_xinxi">
+				<h3 class="sale_title">商家信息</h3>
+				<div class="contact_way">
+					<a href="#" class="pic"><img src="img/images_details/33.jpg"></a>
+					<a href="#" class="shop_title">大旗生活便利</a>
+					<p class="lian_me1">
+						<span class="a">在线咨询：</span>
+						<span class="b"><a href="#"><img src="img/images_details/button_11.gif"></a></span>
+					</p>
+					<p class="lian_me2">
+						<span class="a">联系电话：</span>
+						<span class="b">010-12345678</span>
+					</p>
+					<p class="lian_me3">
+						<span class="a">商家地址：</span>
+						<span class="b">北京市西城区西单北大街甲131号</span>
+					</p>
+					<p class="commitment">卖家承诺</p>
+					<ul class="goods_commit">
+						<li><span>1</span><i>2小时内送达</i></li>
+						<li><span>2</span><i>免费配送</i></li>
+						<li><span>3</span><i>当天发货</i></li>
+						<li><span>4</span><i>实体店服务支持</i></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+	 <!--领取优惠券-->
+	 <div class="you_hui_quan" clearfix>
+	 	<div class="youhui_top">
+	 		领取优惠券
+	 	</div>
+	 	<ul class="youhui_concreteness">
+	 		<li class="youhui_1">
+	 			<span class="num_renmingbi">
+	 				￥<em>15</em>
+	 			</span>
+	 			<div>
+	 				<p class="youhui_ben">
+	 					<i>仅限本店</i>
+	 					<b>满70可用</b>
+	 				</p>
+	 				<p class="youhui_time">有效期：2017-03-02至2018-05-10</p>
+	 				
+	 			</div>
+	 			<span class="lingqu"><a href="#"><img src="img/images_details/youhui1_03.jpg"></a></span>
+	 		</li>
+	 		<li class="youhui_1">
+	 			<span class="num_renmingbi">
+	 				￥<em>15</em>
+	 			</span>
+	 			<div>
+	 				<p class="youhui_ben">
+	 					<i>仅限本店</i>
+	 					<b>满70可用</b>
+	 				</p>
+	 				<p class="youhui_time">有效期：2017-03-02至2018-05-10</p>
+	 				
+	 			</div>
+	 			<span class="lingqu"><a href="#"><img src="img/images_details/youhui1_03.jpg"></a></span>
+	 		</li>
+	 		<li class="youhui_1">
+	 			<span class="num_renmingbi">
+	 				￥<em>15</em>
+	 			</span>
+	 			<div>
+	 				<p class="youhui_ben">
+	 					<i>仅限本店</i>
+	 					<b>满70可用</b>
+	 				</p>
+	 				<p class="youhui_time">有效期：2017-03-02至2018-05-10</p>
+	 				
+	 			</div>
+	 			<span class="lingqu"><a href="#"><img src="img/images_details/youhui1_03.jpg"></a></span>
+	 		</li>
+	 		<li class="youhui_1">
+	 			<span class="num_renmingbi">
+	 				￥<em>15</em>
+	 			</span>
+	 			<div>
+	 				<p class="youhui_ben">
+	 					<i>仅限本店</i>
+	 					<b>满70可用</b>
+	 				</p>
+	 				<p class="youhui_time">有效期：2017-03-02至2018-05-10</p>
+	 				
+	 			</div>
+	 			<span class="lingqu"><a href="#"><img src="img/images_details/youhui1_03.jpg"></a></span>
+	 		</li>
+	 		<li class="youhui_1">
+	 			<span class="num_renmingbi">
+	 				￥<em>15</em>
+	 			</span>
+	 			<div>
+	 				<p class="youhui_ben">
+	 					<i>仅限本店</i>
+	 					<b>满70可用</b>
+	 				</p>
+	 				<p class="youhui_time">有效期：2017-03-02至2018-05-10</p>
+	 				
+	 			</div>
+	 			<span class="lingqu"><a href="#"><img src="img/images_details/youhui1_03.jpg"></a></span>
+	 		</li>
+	 		<li class="youhui_1">
+	 			<span class="num_renmingbi">
+	 				￥<em>15</em>
+	 			</span>
+	 			<div>
+	 				<p class="youhui_ben">
+	 					<i>仅限本店</i>
+	 					<b>满70可用</b>
+	 				</p>
+	 				<p class="youhui_time">有效期：2017-03-02至2018-05-10</p>
+	 				
+	 			</div>
+	 			<span class="lingqu"><a href="#"><img src="img/images_details/youhui1_03.jpg"></a></span>
+	 		</li>
+	 		<li class="youhui_1">
+	 			<span class="num_renmingbi">
+	 				￥<em>15</em>
+	 			</span>
+	 			<div>
+	 				<p class="youhui_ben">
+	 					<i>仅限本店</i>
+	 					<b>满70可用</b>
+	 				</p>
+	 				<p class="youhui_time">有效期：2017-03-02至2018-05-10</p>
+	 				
+	 			</div>
+	 			<span class="lingqu"><a href="#"><img src="img/images_details/youhui1_03.jpg"></a></span>
+	 		</li>
+	 	</ul>
+	 </div>
+	 <!--其他优惠活动-->
+	 <div class="huodong">
+	 	<div class="huodong_title"><i>其他省啦活动</i></div>
+	 	<div class="huodong_content" clearfix>
+					<div class="cate_show1">	
+							<img src="img/images_index/66.jpg">
+							<span class="span_shop">
+								<a href="#">三清洞摩西韩国年糕火锅</a>
+								<p class="p_shop">炫多子餐饮</p>
+							</span>
+							<span class="span_price">
+								<em>￥299</em>
+								<i>￥368</i>
+								<b>已售0</b>
+							</span>
+
+						
+					</div>
+					<div class="cate_show1">	
+							<img src="img/images_index/63.jpeg">
+							<span class="span_shop">
+								<a href="#">三清洞摩西韩国年糕火锅</a></p>
+								<p class="p_shop">炫多子餐饮</p>
+							</span>
+							<span class="span_price">
+								<em>￥299</em>
+								<i>￥368</i>
+								<b>已售0</b>
+							</span>
+
+						
+					</div>
+					<div class="cate_show1">	
+							<img src="img/images_index/45.png">
+							<span class="span_shop">
+								<a href="#">三清洞摩西韩国年糕火锅</a>
+								<p class="p_shop">炫多子餐饮</p>
+							</span>
+							<span class="span_price">
+								<em>￥299</em>
+								<i>￥368</i>
+								<b>已售0</b>
+							</span>
+
+						
+					</div>
+					<div class="cate_show1">	
+							<img src="img/images_index/42.png">
+							<span class="span_shop">
+								<a href="#">三清洞摩西韩国年糕火锅</a>
+								<p class="p_shop">炫多子餐饮</p>
+							</span>
+							<span class="span_price">
+								<em>￥299</em>
+								<i>￥368</i>
+								<b>已售0</b>
+							</span>
+
+						
+					</div>
+					<div class="cate_show1">	
+							<img src="img/images_index/80.png">
+							<span class="span_shop">
+								<a href="#">三清洞摩西韩国年糕火锅</a>
+								<p class="p_shop">炫多子餐饮</p>
+							</span>
+							<span class="span_price">
+								<em>￥299</em>
+								<i>￥368</i>
+								<b>已售0</b>
+							</span>
+
+						
+					</div>
+	 	</div>
+	 </div>
+	 
+	 <!--评论区域-->
+	 <section class="discuss">
+		<input type="button" ind="0" value="详情介绍" class="selected" />
+		<input type="button" ind="1" value="消费评价">
+		<div class="checked">
+			<p class="p_xuanxiang">
+				<span>免费wifi:</span>
+				<span>支持</span>
+				<img src="img/images_details/2.jpg" class="img_xuan1">
+				<img src="img/images_details/1.jpg" class="img_xuan2">
+				<img src="img/images_details/3.jpg" class="img_xuan3">
+				<img src="img/images_details/4.jpg" class="img_xuan4">
+				<img src="img/images_details/5.jpg" class="img_xuan5">
+				<img src="img/images_details/6.jpg" class="img_xuan6">
+				<img src="img/images_details/7.jpg" class="img_xuan7">
+				<img src="img/images_details/8.jpg" class="img_xuan8">
+				<img src="img/images_details/9.jpg" class="img_xuan9">
+				<i class="ti_shi">温馨提示:本信息（包含图片、文字、价格等）仅是作为系统测试数据之用，切勿当真！</i>
+			</p>
+		</div>
+		<div class="pinglun">
+			<ul class="ping1">
+				<em></em>
+			</ul>
+			<b>抱歉，暂时还没有人发表评论哦~！</b>
+			<ol><em></em></ol>
+		</div>
+		
+	 </section>
+	 <!--<script type="text/javascript">
+	 	var btns = Array.from(document.querySelectorAll("input"));
+	 	var divs = Array.from(document.querySelectorAll('div'));
+	 	var len = btns.length;
+	 	btns.forEach((btn,ind)=>{
+			 btn.onclick = () =>{
+	 		for(var j = 0;j>len;j++){
+	 			divs[j].classname = "";
+	 			btns[j].className = "";
+	 		}
+	 		divs[ind].className = "checked";
+	 		btns[ind].className = "selected";
+	 		
+	 	}
+	 })-->
+	 <!--</script>-->
+	 <!--分享到小图标-->
+	 <div class="icon_small">
+	 	<span class="icon_small_1">分享到：</span>
+	 	<span class="icon_small_2"><a href="#"><img src="img/images_details/xinlang_03.jpg"></a></span>
+	 	<span class="icon_small_3"><a href="#"><img src="img/images_details/star_03.jpg"></a></span>
+	 	<span class="icon_small_3"><a href="#"><img src="img/images_details/ye_03.jpg"></a></span>
+	 	<span class="icon_small_3"><a href="#"><img src="img/images_details/weixin_03.jpg"></a></span>
+	 </div>
+		
+			<!--设置图标部分-->
+		
+		<div id="tubiao">
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie1_03.jpg"></dt>
+				<dd class="d1">
+					<b>正品保障</b>
+					<p>正品行货 放心选购</p>
+				</dd>
+			</dl>
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie2_03.jpg"></dt>
+				<dd class="d1">
+					<b>省钱保障</b>
+					<p>全城最优惠 最省钱</p>
+				</dd>
+			</dl>
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie3_03.jpg"></dt>
+				<dd class="d1">
+					<b>售后无忧</b>
+					<p>同城实体 售后安心</p>
+				</dd>
+			</dl>
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie4_03.jpg"></dt>
+				<dd class="d1">
+					<b>准时送达</b>
+					<p>极速物流 极速送达</p>
+				</dd>
+			</dl>
+			
+		</div>
+				
+				
+				
+	</div>
+
+</div>
+		
+	<!--公共的footer底部区域-->
+<div id="footer">
+	<div class="footer_top clearfix">
+		<div class="foot_box">
+			<div class="foot_Left">
+				<h2>客服电话</h2>
+				<span>400-0310-707</span>
+				<p>工作时间 周一至周六 8:00-17:30</p>
+				<b>客服QQ <a href="#"><img src="img/images_index/button_11.gif"></a></b>
+			</div>
+			<div class="foot_Center">
+				<dl>
+					<dt>购物</dt>
+					<dd><a href="#">省啦商城</a></dd>
+					<dd><a href="#">同城快店</a></dd>
+					<dd><a href="#">商家入驻</a></dd>
+					<dd><a href="#">商家管理</a></dd>
+				</dl>
+				<dl>
+					<dt>供求</dt>
+					<dd><a href="#">跳蚤市场</a></dd>
+					<dd><a href="#">交友征婚</a></dd>
+					<dd><a href="#">商业服务</a></dd>
+					<dd><a href="#">同城活动</a></dd>
+				</dl>
+				<dl>
+					<dt>房产</dt>
+					<dd><a href="#">新楼盘</a></dd>
+					<dd><a href="#">二手房</a></dd>
+					<dd><a href="#">出租房</a></dd>
+					<dd><a href="#">找中介</a></dd>
+				</dl>
+				<dl>
+					<dt>招聘</dt>
+					<dd><a href="#">找工作</a></dd>
+					<dd><a href="#">找人才</a></dd>
+					<dd><a href="#">发招聘</a></dd>
+					<dd><a href="#">填简历</a></dd>
+				</dl>
+
+			</div>
+			<div class="foot_Right">
+				<div class="foot_Right1">
+					<p>微信公众号</p>
+					<a href="#"><img src="img/images_index/201708170929175034656.jpg"></a>
+					
+				</div>
+				<div class="foot_Right2">
+					<p>APP客户端</p>
+					<a href="#"><img src="img/images_index/201709191154289028633.gif"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_mid">
+		<ul>
+			<li><a href="#">加为收藏</a></li>
+			<li><a href="#">网站介绍</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">服务条款</a></li>
+			<li><a href="#">广告服务</a></li>
+			<li><a href="#">招聘信息</a></li>
+			<li><a href="#">免责声明</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">手机版</a></li>
+			<li><a href="#">留言反馈</a></li>
+		</ul>
+	</div>
+	<div class="footer_bot">
+		<p class="p_Copyright">
+			Copyright @ 2015-2017  All Right Reserved @河北云佐网络科技有限公司   冀ICP备17027110号
+		</p>
+	</div>
+
+</div>
+
+<!--固定菜单栏部分-->
+<!--固定菜单栏部分-->
+<div class="dingwei">购物车</div>
+	
+	
+</body>
+</html>
+

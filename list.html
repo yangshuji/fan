@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>聚会买商城列表页</title>
+	<link rel="stylesheet" href="css/list.css" />
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/list.js"></script>
+</head>
+<body>
+	<!--common布局-->
+<div class="public_top_layout">
+				<!--设置内容边界-->
+	<div class="topBar">
+					<!--用户入口-->
+		<div class="user-entry">
+<!--			<img src="img/images_index/fcNav_returnHome.png">-->
+			<a href="#" class="display1">手机版</a>
+			<a href="#" class="display2">客户端</a>
+			<a href="#" class="display1">收藏本站</a>
+					</div>
+					<!--登陆信息-->
+					<div id="login_info" class="quick-menu">
+						<li id="li_hao">
+							你好
+							<a href="#" class="denglu">请登录</a>
+							
+						</li>
+						<li>
+							<a href="#" class="zhuce">免费注册</a>
+							
+						<li>
+							<a href="#">QQ登录</a>
+						</li>
+						<li>
+							<a href="#">微信登录</a>
+						</li>
+						<li>
+							<a href="#">积分商城</a>
+						</li>
+						<li class="long1">
+							
+								<a href="#">我的中心</a>
+								<ul>
+									<li><a href="#">基本资料</a></li>
+									<li><a href="#">我的收藏</a></li>
+									<li><a href="#">我的订单</a></li>
+									<li><a href="#">我的密码</a></li>
+								</ul>
+						</li>
+						<li class="long2">
+							
+								<a href="#">工作平台</a>
+							<ul>
+								<li><a href="#">商家平台</a></li>
+								<li><a href="#">企业平台</a></li>
+								<li><a href="#">中介平台</a></li>
+								<li><a href="#">商家平台</a></li>
+								<li><a href="#">会员中心</a></li>
+							</ul>
+						</li>
+						<li class="long3">
+								<a href="#">快速发布</a>
+								<ul>
+									<li><a href="#">求职简历</a></li>
+									<li><a href="#">招聘信息</a></li>
+									<li><a href="#">新闻投稿</a></li>
+									<li><a href="#">求职简历</a></li>
+								</ul>	
+					
+							
+							
+						</li>
+						<li class="long4">
+							
+								<a href="#">网站导航</a>
+						
+						</li>
+					</div>
+					
+				</div>
+			</div>	
+<div class="clearfix w-1200">
+					<div class="logo_fl">
+						<img src="img/images_details/201708091140381013345.jpg">
+					</div>
+					<div class="search_fl">
+						<p class="search_xin">
+							生活信息
+							<ul>
+								<li>店铺商家</li>
+								<li>新闻资讯</li>
+								<li>省啦项目</li>
+								<li>招聘信息</li>
+								<li>商品信息</li>
+								<li>视频逛街</li>
+								<li>便民黄页</li>
+								<li>贴吧搜索</li>
+							</ul>
+						</p>
+						<form action="" method="post">
+							
+							<input type="text" placeholder="请输入关键字"/>
+							
+						</form>
+						<input type="button" value="搜索"/ class="search_sub">
+					</div>
+					<div class="publish_fl">
+						<a href="#" class="a_publish">免费发布消息</a>
+					</div>
+					
+				</div>
+				<!--导航区域-->
+				<div class="nav_area clearfix">
+					
+						<ul class="ul_daohang">
+							<li id="ensconce">
+								<!--ensconce：隐藏的意思-->
+								<a href="#">全部分类</a>
+								<ul class="ul_yincang">
+									<li class="li_conceal1">
+										<h2 class="h2-1">美食</h2>
+										<span>自助餐</span>
+										<span>火锅</span>
+										<span>烤肉</span>
+										<span>自助餐</span>
+										<ol class="ol_yin1">
+											<h3 class="h3_1">美食</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">自助餐</a></li>
+												<li class="li_funi"><a href="#">火锅</a></li>
+												<li class="li_funi"><a href="#">烤肉</a></li>
+												<li class="li_funi"><a href="#">烧烤</a></li>
+												<li class="li_funi"><a href="#">麻辣烫</a></li>
+												<li class="li_funi"><a href="#">西餐</a></li>
+												<li class="li_funi"><a href="#">料理</a></li>
+												<li class="li_funi"><a href="#">蛋糕</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal2">
+										<h2 class="h2-2">娱乐</h2>
+										<span>KTV</span>
+										<span>养生休闲</span>
+										<span>温泉洗浴</span>
+									
+										<ol class="ol_yin2">
+											<h3 class="h3_1">娱乐</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal3">
+										<h2 class="h2-3">酒店</h2>
+										<span>经济型酒店</span>
+										<span>豪华酒店</span>
+									
+										<ol class="ol_yin3">
+											<h3 class="h3_1">酒店</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal4">
+										<h2 class="h2-4">生活</h2>
+										<span>婚纱摄影</span>
+										<span>儿童摄影</span>
+										<span>个性写真</span>
+									
+										<ol class="ol_yin4">
+											<h3 class="h3_1">生活</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal5">
+										<h2 class="h2-5">旅游</h2>
+										<span>周边游</span>
+										<span>省内游</span>
+										<span>省外游</span>
+									
+										<ol class="ol_yin5">
+											<h3 class="h3_1">旅游</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+										<li class="li_conceal6">
+										<h2 class="h2-6">超市</h2>
+										<span>食品饮料</span>
+										<span>粮油副食</span>
+										<span>个人护理</span>
+									
+										<ol class="ol_yin6">
+											<h3 class="h3_1">超市</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+									<li class="li_conceal7">
+										<h2 class="h2-7">特产</h2>
+										<span>本土特产</span>
+										<span>新疆特产</span>
+										<span>云南特产</span>
+									
+										<ol class="ol_yin7">
+											<h3 class="h3_1">超市</h3>
+											<p class="p_yin1">
+												<li class="li_funi"><a href="#">KTV</a></li>
+												<li class="li_funi"><a href="#">养生休闲</a></li>
+												<li class="li_funi"><a href="#">温泉洗浴</a></li>
+												<li class="li_funi"><a href="#">运动健身</a></li>
+												<li class="li_funi"><a href="#">桌游电玩</a></li>
+												<li class="li_funi"><a href="#">咖啡茶馆</a></li>
+												<li class="li_funi"><a href="#">展览</a></li>
+												<li class="li_funi"><a href="#">4D/5D</a></li>
+											</p>
+										</ol>
+									</li>
+
+									
+								</ul>
+										
+							</li>
+							 <li><a href="#">省啦首页</a></li>
+							 							 
+							 <li><a href="#">美食</a></li>
+							 <li><a href="#">娱乐</a></li>
+							 <li><a href="#">酒店</a></li>
+							 <li><a href="#">生活</a></li>
+							 <li><a href="#">旅游</a></li>
+							 <li><a href="#">省啦首页</a></li>
+							 <li><a href="#">专题</a></li>
+							 <li class="returnHome"><a href="#">返回门户首页</a></li>
+							 
+						</ul>
+					
+					
+				</div>
+				
+			<!--小标签的内容区site_crumb:少许小标签-->
+			<div class="site_crumb">
+				<span>当前位置：</span>
+				<a href="#">首页></a>
+				<a href="#">省啦聚惠买商城></a>
+				<a href="#">美食</a>
+				
+			</div>
+			
+		<!--banner图片区域-->
+			<div class="banner">
+				<img src="img/images_index/20170928141421_27240.jpg">
+				<img src="img/images_index/20170928141357_17850.jpg">
+			</div>
+		
+		<!--产品列表导航内容区-->
+			<div class="food_list">
+				<div class="yixuan">
+					<span class="yixuan_s">已选</span>
+					<a href="detail.html">美食</a>
+				</div>
+				<div class="category">
+					<span class="category_s">类别</span>
+					<a href="#">美食(31)</a>
+					<a href="#">娱乐(31)</a>
+					<a href="#">酒店(31)</a>
+					<a href="#">生活(90)</a>
+					<a href="#">旅游(31)</a>
+					<a href="#">超市(80)</a>
+					<a href="#">特产(31)</a>
+				</div>
+				<div class="quanbu">
+					<li class="li_quanbu">
+					<a href="detail.html" class="current">全部</a>
+					<a href="detail.html">自助餐(2)</a>
+					<a href="detail.html">火锅(2)）</a>
+					<a href="#">烤肉(2)</a>
+					<a href="#">烧烤/烤串(2)</a>
+					<a href="#" >麻辣烫(2)</a>
+					<a href="#">西餐(2)</a>
+					<a href="#">料理(2)</a>
+					<a href="#">蛋糕(2)</a>
+					<a href="#">甜点饮品(2)</a>
+					<a href="#">聚餐宴请(2)</a>
+					<a href="#">家常菜(2)</a>
+					<a href="#">东北菜(2)</a>
+					</li>
+				</div>
+				<div class="region">
+					<span class="region_s">区域：</span>
+					<a href="#" class="current">全部</a>
+					<a href="#">秦皇岛市</a>
+					<a href="#">廊坊市</a>
+					<a href="#">保定市</a>
+					<a href="#">唐山市</a>
+					<a href="#">沧州市</a>
+					<a href="#">衡水市</a>
+					<a href="#">张家口市</a>
+					<a href="#">石家庄市</a>
+					<a href="#">邢台市</a>
+					<a href="#">邯郸市</a>
+					<a href="#">承德市</a>
+				</div>
+				<div class="volume">
+					<div class="paixu">
+						<a href="#" id=paixu_default>默认</a>
+						<a href="#" id=paixu_xiaoliang>销量</a>
+						<a href="#" id=paixu_jiage>价格</a>
+						<a href="#" id=paixu_xindan>新单</a>
+						<a href="#" id=paixu_tuijian>推荐</a>
+					</div>
+					<div class="mian_yu_yue">
+						<input type="checkbox" name="s_mianyuyue" id="s_mianyuyue" /><span>免预约</span>
+					</div>
+					<div class="right_search">
+						<form action="" method="post">
+							
+							<input type="text" value="" placeholder="请输入关键字"/>
+							<input type="button" value="搜索">
+						</form>
+					</div>
+				</div>
+					
+			</div>
+			
+		<!--商品展示区域-->
+		<div id="cate">
+			<div class="cate_show">		
+		
+			</div>
+		
+		</div>
+		
+		<!--翻页区域-->
+		<div class="pageNavigation">
+			<em class="firstpage">
+				<span class="shang_yi_ye"><a href="">上一页</a></span>
+			</em>
+			<div class="tier">
+				<a href="#" class="a_tier1">1</a>
+				<a href="#" class="a_tier2">2</a>
+			</div>
+			<i class="secondpage">
+				<span class="xia_yi_ye"><a href="#">下一页</a></span>
+			</i>
+		</div>
+						
+				
+				
+		<!--设置图标部分-->
+		
+		<div id="tubiao">
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie1_03.jpg"></dt>
+				<dd class="d1">
+					<b>正品保障</b>
+					<p>正品行货 放心选购</p>
+				</dd>
+			</dl>
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie2_03.jpg"></dt>
+				<dd class="d1">
+					<b>省钱保障</b>
+					<p>全城最优惠 最省钱</p>
+				</dd>
+			</dl>
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie3_03.jpg"></dt>
+				<dd class="d1">
+					<b>售后无忧</b>
+					<p>同城实体 售后安心</p>
+				</dd>
+			</dl>
+			<dl class="dl1">
+				<dt><img src="img/images_index/qie4_03.jpg"></dt>
+				<dd class="d1">
+					<b>准时送达</b>
+					<p>极速物流 极速送达</p>
+				</dd>
+			</dl>
+			
+		</div>
+				
+				
+				
+	</div>
+
+</div>
+		
+	<!--公共的footer底部区域-->
+<div id="footer">
+	<div class="footer_top clearfix">
+		<div class="foot_box">
+			<div class="foot_Left">
+				<h2>客服电话</h2>
+				<span>400-0310-707</span>
+				<p>工作时间 周一至周六 8:00-17:30</p>
+				<b>客服QQ <a href="#"><img src="img/images_index/button_11.gif"></a></b>
+			</div>
+			<div class="foot_Center">
+				<dl>
+					<dt>购物</dt>
+					<dd><a href="#">省啦商城</a></dd>
+					<dd><a href="#">同城快店</a></dd>
+					<dd><a href="#">商家入驻</a></dd>
+					<dd><a href="#">商家管理</a></dd>
+				</dl>
+				<dl>
+					<dt>供求</dt>
+					<dd><a href="#">跳蚤市场</a></dd>
+					<dd><a href="#">交友征婚</a></dd>
+					<dd><a href="#">商业服务</a></dd>
+					<dd><a href="#">同城活动</a></dd>
+				</dl>
+				<dl>
+					<dt>房产</dt>
+					<dd><a href="#">新楼盘</a></dd>
+					<dd><a href="#">二手房</a></dd>
+					<dd><a href="#">出租房</a></dd>
+					<dd><a href="#">找中介</a></dd>
+				</dl>
+				<dl>
+					<dt>招聘</dt>
+					<dd><a href="#">找工作</a></dd>
+					<dd><a href="#">找人才</a></dd>
+					<dd><a href="#">发招聘</a></dd>
+					<dd><a href="#">填简历</a></dd>
+				</dl>
+
+			</div>
+			<div class="foot_Right">
+				<div class="foot_Right1">
+					<p>微信公众号</p>
+					<a href="#"><img src="img/images_index/201708170929175034656.jpg"></a>
+					
+				</div>
+				<div class="foot_Right2">
+					<p>APP客户端</p>
+					<a href="#"><img src="img/images_index/201709191154289028633.gif"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_mid">
+		<ul>
+			<li><a href="#">加为收藏</a></li>
+			<li><a href="#">网站介绍</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">服务条款</a></li>
+			<li><a href="#">广告服务</a></li>
+			<li><a href="#">招聘信息</a></li>
+			<li><a href="#">免责声明</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">手机版</a></li>
+			<li><a href="#">留言反馈</a></li>
+		</ul>
+	</div>
+	<div class="footer_bot">
+		<p class="p_Copyright">
+			Copyright @ 2015-2017  All Right Reserved @河北云佐网络科技有限公司   冀ICP备17027110号
+		</p>
+	</div>
+
+</div>
+
+<!--固定菜单栏部分-->
+
+<div id="fix_menu" class="fixed_menu">
+	<ul>
+		<li class="li_1"><a href="#"><img src="img/images_index/shopping_car_03.jpg"></a>
+			<p>购物车</p>
+		</li>
+		<li class="li_2"><a href="#"><img src="img/images_index/shopping_car_03.jpg"></a>
+			<p>我的订单</p>
+		</li>
+		<li class="li_3"><a href="#"><img src="img/images_index/kehuduan_03.jpg"></a>
+			<p>在线客服</p>
+		</li>
+		<li class="li_4"><a href="#"><img src="img/images_index/kehuduan_03.jpg"></a>
+			<p>客户端</p>
+		</li>
+		<li class="li_5"><a href="#"><img src="img/images_index/kehuduan_03.jpg"></a>
+			<p>回到顶部</p>
+		</li>
+	</ul>    
+	
+	
+	
+</div>
+	
+	
+	
+	
+	
+	
+</body>
+</html>

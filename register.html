@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>聚惠买商城注册页</title>
+	<link rel="stylesheet" href="css/register.css" />
+	<!--<script type="text/javascript" src="js/jquery-1.11.3.js">-->
+	
+	<!--</script>-->
+
+	<!--<script type="text/javascript" src="js/register.js"></script>-->
+	<script type="text/javascript" src="js/cookie.js"></script>
+</head>
+<body>
+		<!--common布局-->
+<div class="public_top_layout">
+				<!--设置内容边界-->
+	<div class="topBar">
+					<!--用户入口-->
+		<div class="user-entry">
+<!--						<img src="img/images_index/fcNav_returnHome.png">-->
+			<a href="#" class="display1">手机版</a>
+			<a href="#" class="display2">客户端</a>
+			<a href="#" class="display1">收藏本站</a>
+					</div>
+					<!--登陆信息-->
+					<div id="login_info" class="quick-menu">
+						<li id="li_hao">
+							你好
+							<a href="#" class="denglu">请登录</a>
+							
+						</li>
+						<li>
+							<a href="#" class="zhuce">免费注册</a>
+							
+						<li>
+							<a href="#">QQ登录</a>
+						</li>
+						<li>
+							<a href="#">微信登录</a>
+						</li>
+						<li>
+							<a href="#">积分商城</a>
+						</li>
+						<li class="long1">
+							
+								<a href="#">我的中心</a>
+								<ul>
+									<li><a href="#">基本资料</a></li>
+									<li><a href="#">我的收藏</a></li>
+									<li><a href="#">我的订单</a></li>
+									<li><a href="#">我的密码</a></li>
+								</ul>
+						</li>
+						<li class="long2">
+							
+								<a href="#">工作平台</a>
+							<ul>
+								<li><a href="#">商家平台</a></li>
+								<li><a href="#">企业平台</a></li>
+								<li><a href="#">中介平台</a></li>
+								<li><a href="#">商家平台</a></li>
+								<li><a href="#">会员中心</a></li>
+							</ul>
+						</li>
+						<li class="long3">
+								<a href="#">快速发布</a>
+								<ul>
+									<li><a href="#">求职简历</a></li>
+									<li><a href="#">招聘信息</a></li>
+									<li><a href="#">新闻投稿</a></li>
+									<li><a href="#">求职简历</a></li>
+								</ul>	
+					
+							
+							
+						</li>
+						<li class="long4">
+							
+								<a href="#">网站导航</a>
+						
+						</li>
+					</div>
+					
+				</div>
+			</div>	
+			
+		<!--会员注册部分区域-->
+		<div class="huiyuan_zhu">
+			<img src="img/images_list/201708091140381013345.jpg" class="img_hui_zhu">
+			<div class="sub_logo">会员注册</div>
+			<div class="backtrack">
+				<a href="#" class="a_return_shouye">
+					返回首页
+				</a>
+				<a href="#">帮助</a>
+			</div>
+		</div>
+		<!--注册内容的具体区域-->
+<div class="content_zhuce">
+	<div class="zhuce_left">
+		<ul id="tab_reg" class="tab" clearfix style="display: block;">
+			<div class="item current" data-id="0">
+				<span class="tit">昵称注册</span>
+			</div>
+			<div class="item" data-id="2">
+				<span class="tit">手机号注册</span>
+			</div>
+			<div class="item" data-id="1">
+				<span class="tit">邮箱注册</span>
+			</div>
+		</ul>
+		<ol>
+				<li>
+						<input type="text" placeholder="请输入手机号" title="请输入手机号" maxlength="11" class="input input1"/>
+						<div class="shoujihao">请输入手机号</div>
+					</li>
+					<li>
+						<input type="text" placeholder="请输入密码" title="请输入密码" maxlength="20" class="input input2">
+						<div class="shoujihao">请输入密码</div>
+					</li>
+					<li>
+						<input type="text" placeholder="请再次输入密码" title="请再次输入密码" maxlength="20" class="input input3"/>
+						<div class="shoujihao">请再次输入密码</div>
+					</li>
+					
+					<li class="li_sms">
+						<input type="text" placeholder="短信验证码" class="code"/>
+						<a href="" class="code2">获取短信验证码</a>
+					</li>
+					<li class="tiaokuan">
+						<input type="checkbox" />已阅读并同意
+						<a href="">《会员注册协议》</a>
+					</li>
+					
+					<li>
+						<input type="button" value="立即注册" class="liLab"/>
+					</li>
+					<span class="span">请将信息补充完整</span>
+				</ol>
+		
+
+	
+
+	</div>
+	
+		<script>
+				var oInput = document.getElementsByTagName("input");
+			var oDiv = document.getElementsByClassName("shoujihao");
+			var sPan = document.getElementsByClassName("span");
+	
+				oInput[0].onblur = function(){
+				var re = /^(13|14|15|17|18)\d{9}$/g;
+				if(re.test(oInput[0].value) == false || oInput[0].value == ""){
+					oDiv[0].style.display = "block";
+				}else{
+					oDiv[0].style.display = "none";
+				}
+			};
+			oInput[1].onblur = function(){
+				var re = /^([0-9])([\w\.\+\*\$\/\\]{5})$/g;
+				if(re.test(oInput[1].value) == false || oInput[1].value == ""){
+					oDiv[1].style.display = "block";
+				}else{
+					oDiv[1].style.display = "none";
+				}
+			};
+			oInput[2].onblur = function(){
+				if(oInput[2].value != oInput[1].value || oInput[2].value == ""){
+					oDiv[2].style.display = "block";
+				}else{
+					oDiv[2].style.display = "none";
+				}
+			};
+					//提交
+		 oInput[5].onclick = function(){
+		 	alert()
+	 	        for(var i = 0;i < oInput.length-2; i++){
+	 		      if(oInput[i].value == ""){
+	 			alert("请将信息补充完整")
+	 			return ;
+	 		    }
+	 		      
+	 		      
+	 	}
+	 	        var json ={
+	 	        	"phone" : oInput[0].value,
+	 	        	"pwd" : oInput[1].value
+	 	        }
+	 	        if(getCookie(json.phone) == undefined){
+	 	        	setCookie(json.phone,json.pwd)
+	 	        	alert("注册成功");
+	 	        	  location.href = "index.html";
+	 	        }else{
+	 	        	alert("此用户名已占用")
+	 	        }
+	 	      
+	 }
+
+		</script>	
+	
+	
+	
+	<div class="zhuce_right">
+			<h3 class="txt_dingduan">已经注册了，点击<a href="#">登录</a>或者使用下面合作账号直接登录：</h3>
+			<p class="p_q_wei">
+					<i class="i_qq">
+						<span>
+							<a href="#">QQ登录</a>
+							
+						</span>
+						
+					</i>
+					<i class="i_weixin">
+						<span><a href="#">微信登录</a></span>
+						
+					</i>
+				</p>
+			<ul class="zhu_you_xia">
+				<li class="li_1_shang">说明:</li>
+				<li>1.您可以通过注册昵称、邮箱或者手机号来登录；</li>
+				<li>2.、如果忘记密码，请 找回密码 或者拨打我们的客服热线
+　　400-0310-707 咨询帮助； </li>
+			</ul>
+	</div>
+</div>
+
+<!--公共底部区域-->
+	<div class="footer_mid">
+		<ul>
+			<li><a href="#">加为收藏</a></li>
+			<li><a href="#">网站介绍</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">服务条款</a></li>
+			<li><a href="#">广告服务</a></li>
+			<li><a href="#">招聘信息</a></li>
+			<li><a href="#">免责声明</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">手机版</a></li>
+			<li><a href="#">留言反馈</a></li>
+		</ul>
+	</div>
+	<div class="footer_bot">
+		<p class="p_Copyright">
+			Copyright @ 2015-2017  All Right Reserved @河北云佐网络科技有限公司   冀ICP备17027110号
+		</p>
+	</div>
+	
+
+	
+</body>
+</html>
